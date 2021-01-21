@@ -1,0 +1,29 @@
+{
+    "name": "yodawy/observability",
+    "description": "ELK observability",
+    "type": "library",
+    "require": {
+        "arkaitzgarro/elastic-apm-laravel": "^2.0|^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sherief El-Feky",
+            "email": "s.elfeky@yodawy.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Yodawy\\Observability\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yodawy\\Observability\\YodawyObservabilityServiceProvider"
+            ]
+        }
+    }
+}
